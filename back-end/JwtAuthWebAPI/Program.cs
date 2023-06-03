@@ -33,6 +33,7 @@ namespace JwtAuthWebAPI
 					logger.LogError(ex, "An Error occured");
 				}
 			}
+			host.Run();
         }
 
 		public static IWebHost BuildWebHost(string[] args) =>
