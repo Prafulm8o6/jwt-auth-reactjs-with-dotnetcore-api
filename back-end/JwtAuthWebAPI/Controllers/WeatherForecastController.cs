@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace JwtAuthWebAPI.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "SuperAdmin")]
     [ApiController]
     [Route("[controller]/[action]")]
     public class WeatherForecastController : ControllerBase
